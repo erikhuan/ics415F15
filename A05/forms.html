@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 5</title>
+    <style>
+        header, nav, section, footer {border:1px solid grey;}
+        aside {position: absolute; left: 0; width: 25%}
+        section {position: relative; left: 25%; width: 75%;}
+        footer {text-align: center; bottom: 0;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align:center">Erik's Assignment 5</h1>
+    </header>
+    <nav>
+        <a href="/ics415F15/A05/home.html" title="Home">Home</a> |
+        <a href="/ics415F15/A05/forms.html" title="Forms">Forms</a> |
+        <a href="/ics415F15/A05/bonus.html" title="Bonus">Bonus</a>
+    </nav>
+    <aside style="text-align:center">
+        <h3>Forms Summary</h3>
+        <p>HTML supports several different types of input</p>
+    </aside>
+    <section>
+        <h3>Forms Page</h3>
+        <p>The following is a text input:</p>
+        <form name="input" action="form.html" method="post">
+            Username: <input type="text" name="user">
+        </form>
+        <p>Then a password input:</p>
+        <form name="input" action="form.html" method="post">
+            Password: <input type="password" name="password">
+        </form>
+        <p>Radio Buttons:</p>
+        <form>
+            Male <input type="radio" name="sex" value="male">
+            Female <input type="radio" name="sex" value="female">
+            Other <input type="radio" name="sex" value="other">
+        </form>
+        <p>Checkboxes</p>
+        <form>
+            Windows <input type="checkbox" name="os" value="windows">
+            OS X <input type="checkbox" name="os" value="os x">
+            Linux <input type="checkbox" name="os" value="linux">
+        </form>
+        <p>Submit button to send form data</p>
+        <form name="input" action="forms.html" method="post">
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <footer>
+        <p style="text-align:center"><a href="#">Top</a> Copyright (C) Erik Huang</p>
+
+    </footer>
+</body>
+</html>
