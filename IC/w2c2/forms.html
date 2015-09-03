@@ -3,16 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Assignment 4</title>
-    <style>
-        header, nav, section, footer {border:1px solid grey;}
-        aside {position: absolute; left: 0; width: 25%}
-        section {position: relative; left: 25%; width: 75%;}
-        footer {text-align: center; bottom: 0;}
-    </style>
+    <link rel="stylesheet" href="layout.css" type="text/css">
 </head>
 <body>
     <header>
-        <h1 style="text-align:center">Erik's Assignment 4</h1>
+        <h1 style="text-align:center">w2c2</h1>
     </header>
     <nav>
         <a href="home.html" title="Home">Home</a> |
@@ -22,7 +17,7 @@
         <h3>Forms Summary</h3>
         <p>HTML supports several different types of input</p>
     </aside>
-    <section>
+    <div id="content">
         <h3>Forms Page</h3>
         <p>The following is a text input:</p>
         <form name="input" action="home.html" method="post">
@@ -48,7 +43,7 @@
         <form name="input" action="forms.html" method="get">
             <input type="submit" value="Submit">
         </form>
-    </section>
+    </div>
     <footer>
         <p style="text-align:center"><a href="#">Top</a> Copyright (C) Erik Huang</p>
 
