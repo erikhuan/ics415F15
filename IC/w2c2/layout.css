@@ -2,7 +2,7 @@ body {background-color: black;}
 header, nav, #content, footer {border:1px solid grey;}
 h1 {color: dodgerblue;}
 h3 {color: green;}
-p, th, td, li, dl, ul, ol, input {color: white;}
+p, th, td, li, dl, ul, ol, form {color: white;}
 aside {position: absolute; left: 0; width: 25%}
 #content {position: relative; left: 25%; width: 75%;}
 footer {text-align: center; bottom: 0;}
