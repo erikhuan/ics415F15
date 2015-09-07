@@ -3,21 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Assignment 5</title>
-    <style>
-        header, nav, section, footer {border:1px solid grey;}
-        aside {position: absolute; left: 0; width: 25%}
-        section {position: relative; left: 25%; width: 75%;}
-        footer {text-align: center; bottom: 0;}
-    </style>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Shadows Into Light">
+    <link rel="stylesheet" href="layout.css" type="text/css">
 </head>
 <body>
     <header>
         <h1 style="text-align:center">Erik's Assignment 5</h1>
     </header>
-    <nav>
-        <a href="/ics415F15/A05/home.html" title="Home">Home</a> |
-        <a href="/ics415F15/A05/forms.html" title="Forms">Forms</a> |
-        <a href="/ics415F15/A05/bonus.html" title="Bonus">Bonus</a>
+    <nav style="height:50px">
+        <a href="home.html" title="Home">Home</a> |
+        <a href="forms.html" title="Forms">Forms</a> |
+        <a href="bonus.html" title="Bonus">Bonus</a>
     </nav>
     <aside style="text-align:center">
         <h3>Forms Summary</h3>
@@ -25,34 +21,64 @@
     </aside>
     <section>
         <h3>Forms Page</h3>
-        <p>The following is a text input:</p>
-        <form name="input" action="form.html" method="post">
+        <form name="input" action="forms.html" method="get">
+            <p>The following is a text input:</p>
             Username: <input type="text" name="user">
-        </form>
-        <p>Then a password input:</p>
-        <form name="input" action="form.html" method="post">
+
+            <p>Then a password input:</p>
             Password: <input type="password" name="password">
-        </form>
-        <p>Radio Buttons:</p>
-        <form>
+
+            <h3>Radio Buttons:</h3>
             Male <input type="radio" name="sex" value="male">
             Female <input type="radio" name="sex" value="female">
             Other <input type="radio" name="sex" value="other">
-        </form>
-        <p>Checkboxes</p>
-        <form>
+
+            <h3>Checkboxes</h3>
             Windows <input type="checkbox" name="os" value="windows">
             OS X <input type="checkbox" name="os" value="os x">
             Linux <input type="checkbox" name="os" value="linux">
-        </form>
-        <p>Submit button to send form data</p>
-        <form name="input" action="forms.html" method="post">
+
+            <h3>Number</h3>
+            Choose a quantity between 1 and 10:
+            <input type="number" name="quantity" min="1" max="10">
+
+            <h3>Date</h3>
+            Date of Birth: <input type="date" name="dob">
+
+            <h3>Color</h3>
+            Favorite color: <input type="color" name="favColor">
+
+            <h3>Range</h3>
+            <input type="range" name="points" min="0" max="10">
+
+            <h3>Month</h3>
+            Birthday (month and year):
+            <input type="month" name="dobMonth">
+
+            <h3>Time</h3>
+            Select a time:
+            <input type="time" name="appTime">
+
+            <h3>Datetime</h3>
+            <input type="datetime" namne="dobTime">
+
+            <h3>E-mail</h3>
+            <input type="email" name="email">
+
+            <h3>Search</h3>
+            Search Google:
+            <input type="search" name="googlesearch">
+
+            <h3>URL</h3>
+            Add your homepage:
+            <input type="url" name="homepage">
+
+            <p>Submit button to send form data</p>
             <input type="submit" value="Submit">
         </form>
     </section>
     <footer>
-        <p style="text-align:center"><a href="#">Top</a> Copyright (C) Erik Huang</p>
-
+        <p style="text-align:center; height:50px"><a href="#">Top</a> Copyright (C) Erik Huang</p>
     </footer>
 </body>
 </html>

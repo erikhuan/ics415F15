@@ -1,0 +1,11 @@
+body {background-color: black;}
+header, nav, section, footer {border:1px solid grey;}
+h1 {font-family: 'Shadows Into Light', serif; font-size: 48px; color: ghostwhite;}
+h2 {font-family: 'Shadows Into Light', serif; color: mediumpurple;}
+h3 {font-family: 'Shadows Into Light', serif; color: green;}
+p, li, dl, ul, ol, form {font-family: 'Shadows Into Light', serif; color: white;}
+header {height: 25%;}
+nav {font-family: 'Shadows Into Light', serif;}
+aside {font-family: 'Shadows Into Light', serif; position: absolute; left: 0; width: 25%;}
+section {font-family: 'Shadows Into Light', serif; position: relative; left: 25%; width: 75%;}
+footer {text-align: center; bottom: 0; }
