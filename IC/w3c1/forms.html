@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="iE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>w3c1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+</head>
+<body>
+    <header class="container">
+        <h1 style="text-align:center">w3c1</h1>
+    </header>
+    <nav class="container">
+        <a href="home.html" title="Home">Home</a> |
+        <a href="forms.html" title="Forms">Forms</a>
+    </nav>
+    <aside class="col-sm-4" style="text-align:center">
+        <h3>Forms Summary</h3>
+        <p>HTML supports several different types of input</p>
+    </aside>
+    <div id="content" class="col-sm-8">
+        <h3>Forms Page</h3>
+        <p>The following is a text input:</p>
+        <form name="input" action="home.html" method="post">
+            Username: <input type="text" name="user">
+        </form>
+        <p>Then a password input:</p>
+        <form name="input" action="home.html" method="post">
+            Password: <input type="password" name="password">
+        </form>
+        <p>Radio Buttons:</p>
+        <form>
+            Male <input type="radio" name="sex" value="male">
+            Female <input type="radio" name="sex" value="female">
+            Other <input type="radio" name="sex" value="other">
+        </form>
+        <p>Checkboxes</p>
+        <form>
+            Windows <input type="checkbox" name="os" value="windows">
+            OS X <input type="checkbox" name="os" value="os x">
+            Linux <input type="checkbox" name="os" value="linux">
+        </form>
+        <p>Submit button to send form data</p>
+        <form name="input" action="forms.html" method="get">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <footer class="container">
+        <p style="text-align:center"><a href="#">Top</a> Copyright (C) Erik Huang</p>
+
+    </footer>
+    <script src="https://ajax.googpleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
