@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="iE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 6</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Shadows Into Light">
+    <link rel="stylesheet" href="layout.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+</head>
+<body>
+    <header class="container">
+        <h1 style="text-align:center">Erik's Assignment 6</h1>
+    </header>
+    <nav style="height:50px" class="container">
+        <a href="home.html" title="Home">Home</a> |
+        <a href="forms.html" title="Forms">Forms</a> |
+        <a href="bonus.html" title="Bonus">Bonus</a>
+    </nav>
+    <div class="container">
+        <aside style="text-align:center" class="col-sm-4">
+            <h3>Forms Summary</h3>
+            <p>HTML supports several different types of input</p>
+        </aside>
+        <section class="col-sm-8" style="border-left: solid black">
+            <h3>Forms Page</h3>
+            <h3>Here are tabs</h3>
+            <div>
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#button" aria-controls="button" role="tab" data-toggle="tab">Button</a></li>
+                    <li role="presentation"><a href="#form" aria-controls="form" role="tab" data-toggle="tab">Form</a></li>
+                    <li role="presentation"><a href="#other" aria-controls="other" role="tab" data-toggle="tab">Other</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="button">
+                        <h3>Buttons</h3>
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default">Left</button>
+                            <button type="button" class="btn btn-default">Middle</button>
+                            <button type="button" class="btn btn-default">Right</button>
+                        </div>
+
+                        <h3>Radio Buttons:</h3>
+                        Male <input type="radio" name="sex" value="male">
+                        Female <input type="radio" name="sex" value="female">
+                        Other <input type="radio" name="sex" value="other">
+
+                        <h3>Checkboxes</h3>
+                        Windows <input type="checkbox" name="os" value="windows">
+                        OS X <input type="checkbox" name="os" value="os x">
+                        Linux <input type="checkbox" name="os" value="linux">
+
+                        <h3>Number</h3>
+                        Choose a quantity between 1 and 10:
+                        <input type="number" name="quantity" min="1" max="10">
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="form">
+                        <form name="input" action="forms.html" method="get">
+                        <h3>Username</h3>
+                        Username: <input type="text" name="user">
+
+                        <h3>Password</h3>
+                        Password: <input type="password" name="password">
+
+                        <h3>E-mail</h3>
+                        <input type="email" name="email">
+                        <p>Submit button to send form data</p>
+                        <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="other">
+                        <h3>Date</h3>
+                        Date of Birth: <input type="date" name="dob">
+
+                        <h3>Color</h3>
+                        Favorite color: <input type="color" name="favColor">
+
+                        <h3>Range</h3>
+                        <input type="range" name="points" min="0" max="10">
+
+                        <h3>Month</h3>
+                        Birthday (month and year):
+                        <input type="month" name="dobMonth">
+
+                        <h3>Time</h3>
+                        Select a time:
+                        <input type="time" name="appTime">
+
+                        <h3>Datetime</h3>
+                        <input type="datetime" namne="dobTime">
+
+                        <h3>Search</h3>
+                        Search Google:
+                        <input type="search" name="googlesearch">
+
+                        <h3>URL</h3>
+                        Add your homepage:
+                        <input type="url" name="homepage">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="container">
+        <p style="text-align:center; height:50px"><a href="#">Top</a> Copyright (C) Erik Huang</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
