@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="iE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>w3c1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+</head>
+<body>
+    <div id="header" class="container">
+        <h1 style="text-align:center">w3c1</h1>
+    </div>
+    <div id="nav" class="container">
+        <a href="home.html" title="Home">Home</a>
+    </div>
+    <div id="main" class="container">
+        <div id="side" class="col-sm-4" style="text-align:center">
+            <h3>Summary Window</h3>
+            <p>
+                HTML supports tables.<br>
+                HTML supports three different types of lists;
+                unordered, ordered, and description.
+            </p>
+        </div>
+        <div id="content" class="col-sm-4">
+            <h3>Home Page</h3>
+
+            <p id="erase">This web page has a two column layout with header, navigation bar, and footer.
+             There is a fairly large header, narrow navigation bar. The main section of the
+            website takes up 75% of the page. The left sidebar is center aligned.</p>
+
+            <p>The paragraph above is wrong, so let's delete it.</p>
+
+            <button onclick="erase()">Delete that paragraph</button>
+        </div>
+        <div id="extra" class="col-sm-4">
+            <h3>Hi there</h3>
+
+            <p onmouseover="colorMe(this)" onmouseout="colorBack(this)" style="color:blue;">Random Text</p>
+        </div>
+    </div>
+    <div id="footer">
+        <p style="text-align:center"><a href="#">Top</a> Copyright (C) Erik Huang</p>
+    </div>
+    <script src="https://ajax.googpleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        function colorMe(x) {
+            x.style.color = "red";
+        }
+        function colorBack(x) {
+            x.style.color = "blue";
+        }
+        function erase() {
+            document.getElementById("erase").innerHTML = "";
+        }
+    </script>
+</body>
+</html>
