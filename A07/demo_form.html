@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="iE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 7</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Shadows Into Light">
+    <link rel="stylesheet" href="layout.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+</head>
+<body>
+<header class="container">
+    <h1 style="text-align:center">Erik's Assignment 7</h1>
+</header>
+<nav style="height:50px" class="container">
+    <a href="demo_form.html" title="Home">Home</a>
+</nav>
+<div class="container">
+    <aside style="text-align:center" class="col-sm-4">
+        <h3>Summary Window</h3>
+        <p>
+            HTML supports tables.<br>
+            HTML supports three different types of lists;
+            unordered, ordered, and description.
+        </p>
+    </aside>
+    <section class="col-sm-8" style="border-left: solid ghostwhite">
+        <form name="myForm" action="demo_form.html" onsubmit="return validateForm()" method="get">
+            <div class="form-group">
+                <label for="username">User name: </label>
+                <input type="text" name="name" id="username" onkeyup="entryCheck('username','confirmUser'); return false;">
+                <span id="confirmUser" class="confirmMessage"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" onkeyup="entryCheck('email','confirmEmail'); return false;">
+                <span id="confirmEmail" class="confirmMessage"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password" onkeyup="entryCheck('password','confirmPass'); return false;">
+                <span id="confirmPass" class="confirmMessage"></span>
+            </div>
+            <div class="form-group">
+                <label for="confirm">Confirm Password: </label>
+                <input type="password" name="confirm" id="confirm" onkeyup="passCheck(); return false;">
+                <span id="confirmMessage" class="confirmMessage"></span>
+            </div>
+            <input type="submit" value="Submit" onclick="passCheck()">
+        </form>
+    </section>
+</div>
+<footer class="container">
+    <p style="text-align:center; height:50px"><a href="#">Top</a> Copyright (C) Erik Huang</p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+    function entryCheck(input, span) {
+        var message = document.getElementById(span);
+        var confirm = document.getElementById(input);
+        var inputVal = document.getElementById(input);
+        if(inputVal.value == "") {
+            confirm.style.backgroundColor = "red";
+            message.innerHTML = "Required*"
+        }else {
+            confirm.style.backgroundColor = "white";
+            message.innerHTML = "Check"
+        }
+    }
+    function passCheck() {
+        var pass = document.getElementById("password");
+        var confirm = document.getElementById("confirm");
+        var message = document.getElementById("confirmMessage");
+        if(pass.value != confirm.value || confirm.value == "") {
+            confirm.style.backgroundColor = "red";
+            message.innerHTML = "Passwords do not match!"
+        }else {
+            confirm.style.backgroundColor = "white";
+            message.innerHTML = "Passwords match!"
+        }
+    }
+</script>
+</body>
+</html>

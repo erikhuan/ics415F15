@@ -15,29 +15,30 @@
     <a href="process.html" title="Process">Process</a>
 </div>
 <div class=" container" id="main">
+    <script>
+        function processInfo() {
+            var x = document.createElement("TABLE");
+            x.setAttribute("id", "userInfo");
+            document.body.appendChild(x);
 
+            var y = document.createElement("TR");
+            y.setAttribute("id", "info");
+            document.getElementById("userInfo").appendChild(y);
+
+            var z = document.createElement("TD")
+            var info = location.search.split('&');
+            for (var i = 0; i < info.length; i++) {
+                z.appendChild(document.createTextNode(info[i]));
+                document.getElementById("info").appendChild(z);
+            }
+        }
+        processInfo();
+    </script>
 </div>
 <div class="container" id="footer">
     <p style="text-align:center"><a href="#">Top</a> Copyright (C) Erik Huang</p>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script>
-    function processInfo() {
-        var x = document.createElement("TABLE");
-        x.setAttribute("id", "myTable");
-        document.body.appendChild(x);
-
-        var y = document.createElement("TR");
-        y.setAttribute("id", "myTr");
-        document.getElementById("myTable").appendChild(y);
-
-        var z = document.createElement("TD");
-        var t = document.createTextNode("cell");
-        z.appendChild(t);
-        document.getElementById("myTr").appendChild(z);
-    }
-    processInfo();
-</script>
 </body>
 </html>
