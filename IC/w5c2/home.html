@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="iE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>w5c2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#erase").click(function(){
+                $(this).hide();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+           $("#testFade").mouseenter(function(){
+              $(this).fadeOut();
+           });
+            $("#testFade").mouseleave(function(){
+               $(this).fadeIn();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#test").load("text.txt");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="header" class="container">
+        <h1 style="text-align:center">w5c2</h1>
+    </div>
+    <div id="nav" class="container">
+        <a href="home.html" title="Home">Home</a>
+    </div>
+    <div id="main" class="container">
+        <div id="side" class="col-sm-4" style="text-align:center">
+            <h3>Summary Window</h3>
+            <p>
+                HTML supports tables.<br>
+                HTML supports three different types of lists;
+                unordered, ordered, and description.
+            </p>
+        </div>
+        <div id="content" class="col-sm-4">
+            <h3>Home Page</h3>
+
+            <p id="erase">This web page has a two column layout with header, navigation bar, and footer.
+             There is a fairly large header, narrow navigation bar. The main section of the
+            website takes up 75% of the page. The left sidebar is center aligned.</p>
+
+            <p>The paragraph above is wrong, so let's delete it. By clicking on it.</p>
+        </div>
+        <div id="extra" class="col-sm-4">
+            <h3>Hi there</h3>
+
+            <p id="testFade">Random Ghost Text</p>
+        </div>
+    </div>
+    <div id="test" class="container">
+        <p>What am I doing?</p>
+    </div>
+    <button>Click me</button>
+    <div id="footer" class="container">
+        <p style="text-align:center"><a href="#">Top</a> Copyright (C) Erik Huang</p>
+    </div>
+    <script src="https://ajax.googpleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
